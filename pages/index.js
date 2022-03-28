@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 
-const page = () => {
+const Page = () => {
   let router = useRouter();
   let name = "";
   return (
@@ -19,7 +19,7 @@ const page = () => {
           router.push({
             pathname: '/chat',
             query: {n: name}
-            }) }}}>Chat</button>
+            }) }}}>Enter</button>
     </div>
     <style jsx> 
         { `
@@ -66,4 +66,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;
