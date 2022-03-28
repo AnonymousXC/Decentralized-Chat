@@ -42,7 +42,6 @@ export function useChannel(channelName, callbackOnMessage) {
     channel.presence.get((err, member) => {
         if(err) {return}
         onlineMember = member.length;
-        console.log(member);
     })
 
 
